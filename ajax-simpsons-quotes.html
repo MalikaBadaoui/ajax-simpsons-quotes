@@ -15,7 +15,7 @@
   </style>
 </head>
 
-<body>
+<body onclick= "fetchquotesJSON()">
   <section class="section">
     <div class="container">
       <h1 class="title">Simpsons quotes</h1>
@@ -44,7 +44,7 @@
       const simpsonHtml = `
         <p>${quotes.quote}</p>
         <p><storng>${quotes.character} </strong></p>
-        <img src="${quotes.image} ${quotes.characterDirection}" />
+        <img src="${quotes.image} ${quotes.characterDirection} onClick = "fetchquotesJSON()" />
       `;
       document.querySelector('#simpson').innerHTML = simpsonHtml;
     });
